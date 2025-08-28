@@ -414,7 +414,7 @@
             </div>
             <div class="contact-content">
                 <div class="contact-form">
-                <form id="contactForm" action="send.php" method="post">
+                <form id="contactForm" action="/.netlify/functions/send" method="post">
                     <div class="form-group">
                         <label for="name">Full Name</label>
                         <input type="text" id="name" name="name" required>
@@ -431,7 +431,7 @@
                         <label for="message">Message</label>
                         <textarea id="message" name="message" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">
+                    <button type="submit" id="submitBtn" class="btn btn-primary">
                         <i class="fas fa-paper-plane"></i> Send Message
                     </button>
                 </form>
